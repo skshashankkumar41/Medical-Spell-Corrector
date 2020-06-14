@@ -1,6 +1,6 @@
 # Medical Spell Corrector
 
-A spelling corrector for medical incorrect words/text
+A spelling corrector for medical incorrect word/text
 
 ## Usage
 Clone the repository and run the following commands from the terminal to use spell corrector 
