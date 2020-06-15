@@ -55,9 +55,11 @@ def spellchecker_text(string):
                 sim = 1-scipy.spatial.distance.cosine(np.asarray(vectorizer.transform([' '.join(ngram_generator(text))]).todense())[0].reshape(-1,1), test_vector.reshape(-1,1))
                 lev_ratio = ratio(ngram_term,text)
                 sim_dict[ngram_term] = (sim + lev_ratio)/2
-
-            final_dict = {k: v for k, v in sorted(sim_dict.items(), key=lambda item: item[1],reverse = True)}
-            best_term = max(final_dict, key=final_dict.get)
+            try:
+                final_dict = {k: v for k, v in sorted(sim_dict.items(), key=lambda item: item[1],reverse = True)}
+                best_term = max(final_dict, key=final_dict.get)
+            except:
+                best_term = text
         corrected_string.append(best_term)
         
     print("INPUT TEXT     :: {}\nCORRECTED TEXT :: {}\nPROCESS TIME   :: {}".format(string,' '.join(corrected_string),time.time() - start_time))
