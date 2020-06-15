@@ -1,6 +1,9 @@
 # Medical Spell Corrector
 
-A spelling corrector for medical incorrect word/text
+A spelling corrector for medical incorrect words/text
+
+## Data
+Data has been scrapped from different websites using scrapy and is available in the data directory of this repository
 
 ## Usage
 Clone the repository and run the following commands from the terminal to use spell corrector 
