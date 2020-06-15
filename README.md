@@ -8,6 +8,10 @@ Data has been scrapped from different websites using scrapy and is available in 
 ## Usage
 Clone the repository and run the following commands from the terminal to use spell corrector 
 
+#### Install project dependencies from requirements.txt
+```
+ pip install -r requirements.txt
+```
 #### Spell Corrector for Text
 ```
  python .\medicalSpellCorrector_text.py --text "INCORRECT TEXT HERE"
