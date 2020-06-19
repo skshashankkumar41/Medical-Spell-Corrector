@@ -14,17 +14,17 @@ Clone the repository and run the following commands from the terminal to use spe
 ```
 #### Spell Corrector for Text
 ```
- python .\medicalSpellCorrector_text.py --text "INCORRECT TEXT HERE"
+ python medicalSpellCorrector_text.py --text "INCORRECT TEXT HERE"
 ```
 #### Spell Corrector for Word
 ```
- python .\medicalSpellCorrector_word.py --word "INCORRECT WORD HERE"
+ python medicalSpellCorrector_word.py --word "INCORRECT WORD HERE"
 ```
 #### Training on New Terms
 To train new words just add those new words in one of the json files in data folder correctly and run the following command
 
 ```
- python .\medicalSpellCorrector_train.py  
+ python medicalSpellCorrector_train.py  
 ```
 
 ## Results
